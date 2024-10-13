@@ -1,5 +1,5 @@
 # ==================== builder ====================
-FROM golang:1.21.5-alpine as builder
+FROM docker.io/library/golang:1.21.5-alpine AS builder
 WORKDIR /app
 
 COPY go.mod go.sum ./
